@@ -7,12 +7,13 @@ import Default from './pages/Default';
 import Recipes from './pages/Recipes';
 import SingleRecipe from './pages/SingleRecipe';
 import {BrowserRouter as  Router, Route, Switch} from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
       <Router>
         <main>
-          {/* navbar Goes here */}
+          <Navbar/>
           <Switch>
             <Route path = "/" exact component={Home} />
             <Route path = "/recipes" exact component={Recipes} />

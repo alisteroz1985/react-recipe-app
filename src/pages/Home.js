@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import Header from "../components/Header";
+import {Link} from "react-router-dom";
 
 export default class Home extends Component {
     render() {
         return (
-           <h4>Hello from HOME</h4>
+            <Header title="Amazing Recipes" >
+                <Link to="recipes" className="text-uppercase btn btn-secondary btg-lg mt-3" >
+                Search Recipes
+                </Link>
+            </Header>
         )
     }
 }
